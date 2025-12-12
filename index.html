@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Работать у нас — здорово!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="site-header__inner">
+        <a class="logo-container" href="#top" aria-label="Сила Медицины">
+          <div class="logo-symbol">
+            <span class="char-c">С</span>
+            <span class="char-m">М</span>
+          </div>
+          <div class="logo-text">СИЛА МЕДИЦИНЫ</div>
+        </a>
+
+        <nav class="site-nav" aria-label="Навигация">
+          <a href="#about" class="nav-link">О компании</a>
+          <a href="#benefits" class="nav-link">Преимущества</a>
+          <a href="#career" class="nav-link">Карьера</a>
+          <a href="#reviews" class="nav-link">Отзывы</a>
+        </nav>
+
+        <a href="#feedback" class="header-cta header-cta--header"
+          >Связаться с HR</a
+        >
+
+        <button
+          class="burger"
+          id="burgerBtn"
+          type="button"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mnav" id="mobileMenu" aria-hidden="true">
+      <div class="mnav__overlay" data-menu-close></div>
+
+      <div class="mnav__panel">
+        <div class="mnav__top">
+          <div class="mnav__title">Меню</div>
+          <button
+            class="mnav__close"
+            type="button"
+            aria-label="Закрыть меню"
+            data-menu-close
+          >
+            ✕
+          </button>
+        </div>
+
+        <nav class="mnav__list">
+          <a href="#about" class="mnav__link">О компании</a>
+          <a href="#benefits" class="mnav__link">Преимущества</a>
+          <a href="#career" class="mnav__link">Карьера</a>
+          <a href="#reviews" class="mnav__link">Отзывы</a>
+          <a href="#feedback" class="mnav__link">Форма</a>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero-section" id="top">
+      <div class="container">
+        <div class="hero-composition">
+          <div class="promo-card">
+            <img
+              src="assets/images/back22.png"
+              alt="Background Texture"
+              class="card-bg-img"
+            />
+            <div class="card-overlay"></div>
+
+            <div class="card-content">
+              <div class="badge-white">Вакансии открыты</div>
+
+              <h1 class="hero-title">
+                Работать у нас <br />
+                <span class="title-outline">ЭТО ЗДОРОВО!</span>
+              </h1>
+
+              <div class="card-actions">
+                <button class="btn-primary">Смотреть вакансии</button>
+                <div class="play-video">
+                  <span class="play-icon">▶</span>
+                  <span>Подробнее о вакансиях</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottle-container">
+            <div class="bottle-wrapper">
+              <img
+                src="assets/images/chernaya.png"
+                alt="Витамины"
+                class="main-bottle"
+              />
+
+              <div class="floating-tag">
+                <span class="tag-val">500+</span>
+                <span class="tag-lbl">Сотрудников</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-info">
+          <p class="lead-text">
+            Мы заботимся о здоровье нации и создаем <br />
+            лучшие условия для наших сотрудников.
+          </p>
+          <div class="scroll-hint">Листайте вниз ↓</div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about-composition-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="visual-part">
+            <div class="bottles-compose">
+              <img
+                src="assets/images/korichnevaya.png"
+                alt="Main Product"
+                class="bottle-front"
+              />
+              <img
+                src="assets/images/belaya.png"
+                alt="Floating Product"
+                class="bottle-back"
+              />
+              <div class="glow-effect"></div>
+            </div>
+          </div>
+
+          <div class="content-part">
+            <div class="year-badge">2025</div>
+
+            <h2 class="about-title">
+              НАША МИССИЯ — <br />
+              ОЗДОРОВЛЕНИЕ НАЦИИ
+            </h2>
+
+            <div class="about-desc">
+              <p class="text-lead">
+                Мы создаем новую культуру заботы о здоровье, объединяя силу
+                природы и передовые научные разработки.
+              </p>
+              <div class="specs-grid">
+                <div class="spec-item">
+                  <span class="spec-label">Производство</span>
+                  <span class="spec-value">Россия / GMP</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Компоненты</span>
+                  <span class="spec-value">Premium Quality</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Эффективность</span>
+                  <span class="spec-value">100% Active</span>
+                </div>
+              </div>
+              <p class="text-secondary">
+                Каждая капсула — это результат тщательных исследований. Работая
+                у нас, вы вносите вклад в социальное благополучие и здоровье
+                миллионов людей, делая этот мир лучше и энергичнее.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="benefits-section-light">
+      <div class="container">
+        <div class="benefits-header">
+          <h2 class="benefits-title">
+            ПОЧЕМУ МЫ <span class="text-outline-dark">ЛУЧШЕ</span><br />
+            КОНКУРЕНТОВ?
+          </h2>
+          <p class="benefits-subtitle">
+            Мы не идем на компромиссы в вопросах качества.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="b-card-light" data-tilt>
+            <div class="b-icon-box">
+              <svg
+                class="b-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M3 21h18M5 21V7l8-4 8 4v14M8 21v-9a3 3 0 016 0v9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="b-content">
+              <h3>Собственное производство</h3>
+              <p>
+                Все наши заводы расположены в России. Полный контроль цикла.
+              </p>
+            </div>
+            <div class="b-number">01</div>
+          </div>
+
+          <div class="b-card-light" data-tilt>
+            <div class="b-icon-box">
+              <svg
+                class="b-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path
+                  d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"
+                />
+              </svg>
+            </div>
+            <div class="b-content">
+              <h3>Международное качество</h3>
+              <p>
+                Ингредиенты из лучших лабораторий мира гарантируют
+                эффективность.
+              </p>
+            </div>
+            <div class="b-number">02</div>
+          </div>
+
+          <div class="b-card-light" data-tilt>
+            <div class="b-icon-box">
+              <svg
+                class="b-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <div class="b-content">
+              <h3>Абсолютная надежность</h3>
+              <p>
+                Стабильная работа и логистика даже в сложных экономических
+                условиях.
+              </p>
+            </div>
+            <div class="b-number">03</div>
+          </div>
+
+          <div class="b-card-light" data-tilt>
+            <div class="b-icon-box">
+              <svg
+                class="b-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                />
+              </svg>
+            </div>
+            <div class="b-content">
+              <h3>Социальная ответственность</h3>
+              <p>
+                Мы делаем премиальную продукцию доступной для здоровья каждого.
+              </p>
+            </div>
+            <div class="b-number">04</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="career" class="career-split-section">
+      <div class="container">
+        <div class="split-layout">
+          <div class="sticky-info">
+            <div class="info-content">
+              <div class="label-badge">Карьера</div>
+              <h2 class="career-title">
+                МЫ ЦЕНИМ <br />
+                <span class="text-outline-dark">ЛЮДЕЙ</span><br />
+                А НЕ<br />
+                РЕСУРСЫ
+              </h2>
+              <p class="career-desc">
+                Работа в «Силе Медицины» — это уверенность в завтрашнем дне. Мы
+                создали экосистему, где каждый сотрудник чувствует поддержку на
+                всех этапах своего пути.
+              </p>
+              <button class="btn-career-cta">Смотреть вакансии</button>
+            </div>
+          </div>
+
+          <div class="cards-stream">
+            <div class="stream-card">
+              <div class="card-bg-number">01</div>
+              <div class="card-body">
+                <div class="stream-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <rect x="2" y="6" width="20" height="12" rx="2" />
+                    <circle cx="12" cy="12" r="2" />
+                    <path
+                      d="M6 12h.01M18 12h.01"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <div class="stream-text">
+                  <h3>Высокая оплата</h3>
+                  <p>Зарплата выше рынка + прозрачная система KPI и бонусов.</p>
+                </div>
+              </div>
+              <div class="card-arrow">→</div>
+            </div>
+
+            <div class="stream-card">
+              <div class="card-bg-number">02</div>
+              <div class="card-body">
+                <div class="stream-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M9 11l3 3L22 4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="stream-text">
+                  <h3>Полный соцпакет</h3>
+                  <p>
+                    Официальное оформление с первого дня, отпуска и больничные.
+                  </p>
+                </div>
+              </div>
+              <div class="card-arrow">→</div>
+            </div>
+
+            <div class="stream-card">
+              <div class="card-bg-number">03</div>
+              <div class="card-body">
+                <div class="stream-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <path d="M16 2v4M8 2v4M3 10h18" />
+                  </svg>
+                </div>
+                <div class="stream-text">
+                  <h3>График 5/2</h3>
+                  <p>
+                    Классическая рабочая неделя. Мы уважаем ваше личное время.
+                  </p>
+                </div>
+              </div>
+              <div class="card-arrow">→</div>
+            </div>
+
+            <div class="stream-card">
+              <div class="card-bg-number">04</div>
+              <div class="card-body">
+                <div class="stream-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
+                </div>
+                <div class="stream-text">
+                  <h3>Стабильность</h3>
+                  <p>
+                    Крупное производство. Гарантированные выплаты без задержек.
+                  </p>
+                </div>
+              </div>
+              <div class="card-arrow">→</div>
+            </div>
+
+            <div class="stream-card">
+              <div class="card-bg-number">05</div>
+              <div class="card-body">
+                <div class="stream-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </div>
+                <div class="stream-text">
+                  <h3>Рост и развитие</h3>
+                  <p>Оплачиваем профильные курсы и тренинги для сотрудников.</p>
+                </div>
+              </div>
+              <div class="card-arrow">→</div>
+            </div>
+
+            <div class="stream-card">
+              <div class="card-bg-number">06</div>
+              <div class="card-body">
+                <div class="stream-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1014 16H2m15.73-8.27A2.5 2.5 0 1119.5 12H2"
+                    />
+                  </svg>
+                </div>
+                <div class="stream-text">
+                  <h3>Комфорт</h3>
+                  <p>
+                    Современные офисы, зоны отдыха и передовое оборудование.
+                  </p>
+                </div>
+              </div>
+              <div class="card-arrow">→</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews-section">
+      <div class="container">
+        <div class="reviews-header">
+          <h2 class="section-title">
+            ГОЛОС <span class="text-gradient">КОМАНДЫ</span>
+          </h2>
+          <p class="section-subtitle">
+            Мы спросили наших сотрудников, почему они выбирают нас каждый день.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="bg-quote">”</div>
+
+            <div class="review-top">
+              <div class="avatar-circle color-1">А.К.</div>
+              <div class="user-info">
+                <div class="user-name">Алексей К.</div>
+                <div class="user-role">Технолог производства</div>
+              </div>
+              <div class="verified-badge" title="Подтвержденный сотрудник">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="review-body">
+              <p class="main-quote">«Мое предложение внедрили за месяц»</p>
+              <p class="full-text">
+                Боялся, что на большом заводе буду просто винтиком. Но здесь
+                реально слушают идеи. Мое предложение по оптимизации линии
+                приняли, внедрили и выписали премию. Это мотивирует.
+              </p>
+            </div>
+
+            <div class="review-footer">
+              <div class="tenure">В штате: <span>3 года</span></div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="bg-quote">”</div>
+
+            <div class="review-top">
+              <div class="avatar-circle color-2">Е.М.</div>
+              <div class="user-info">
+                <div class="user-name">Елена М.</div>
+                <div class="user-role">Менеджер по логистике</div>
+              </div>
+              <div class="verified-badge" title="Подтвержденный сотрудник">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="review-body">
+              <p class="main-quote">«Соцпакет реальный, а не на бумаге»</p>
+              <p class="full-text">
+                Честно? Пришла из-за зарплаты, она выше рынка. А осталась из-за
+                коллектива и условий. Нет токсичности, все помогают. ДМС очень
+                выручает, когда есть дети.
+              </p>
+            </div>
+
+            <div class="review-footer">
+              <div class="tenure">В штате: <span>1 год</span></div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="bg-quote">”</div>
+
+            <div class="review-top">
+              <div class="avatar-circle color-3">С.В.</div>
+              <div class="user-info">
+                <div class="user-name">Сергей В.</div>
+                <div class="user-role">Старший лаборант</div>
+              </div>
+              <div class="verified-badge" title="Подтвержденный сотрудник">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="review-body">
+              <p class="main-quote">«Чувствую уверенность в завтрашнем дне»</p>
+              <p class="full-text">
+                Стабильность — главное слово. В любые кризисы зарплата всегда
+                вовремя, никого не сокращали. Ты просто знаешь, что компания
+                стоит крепко. Для семьи это важно.
+              </p>
+            </div>
+
+            <div class="review-footer">
+              <div class="tenure">В штате: <span>5 лет</span></div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="feedback" class="feedback-anchor"></div>
+    <section id="feedback" class="feedback-reveal-section">
+      <div id="feedback1" class="feedback-container">
+        <div class="feedback-main-row">
+          <div class="feedback-visual">
+            <div class="incognito-badge">
+              <div class="eye-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"
+                  ></path>
+                  <line x1="1" y1="1" x2="23" y2="23"></line>
+                </svg>
+              </div>
+              <span>Incognito Mode</span>
+            </div>
+
+            <h2 class="feedback-title">
+              Поделитесь своим мнением <br />
+              <span class="glitch-text" data-text="анонимно">анонимно</span>
+            </h2>
+            <p class="feedback-desc">
+              Это безопасный канал связи. Мы не видим ваше имя, IP или почту.
+              Честная обратная связь помогает нам становиться лучше.
+            </p>
+          </div>
+
+          <div class="feedback-form-wrapper">
+            <form class="terminal-form">
+              <div class="terminal-header">
+                <div class="traffic-lights">
+                  <span class="light red"></span>
+                  <span class="light yellow"></span>
+                  <span class="light green"></span>
+                </div>
+                <div class="terminal-title">encrypted_connection.sh</div>
+              </div>
+
+              <div class="terminal-body">
+                <div class="input-line">
+                  <span class="prompt">></span>
+                  <span class="cursor">_</span>
+                  <textarea
+                    placeholder="Введите ваше сообщение здесь..."
+                    required
+                  ></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn-terminal">
+                <span class="btn-text">ОТПРАВИТЬ СООБЩЕНИЕ</span>
+                <div class="btn-glare"></div>
+              </button>
+
+              <div class="security-note">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                </svg>
+                Данные шифруются (End-to-End Encryption)
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <footer class="reveal-footer">
+          <div class="footer-cols">
+            <div class="footer-col">
+              <div class="footer-logo">
+                <span class="f-symbol">СМ</span>
+                <span class="f-text">СИЛА МЕДИЦИНЫ</span>
+              </div>
+              <p class="footer-legal">
+                © 2025 ООО «Сила Медицины»<br />
+                ИНН 7700000000 / ОГРН 1027700000000
+              </p>
+            </div>
+
+            <div class="footer-col">
+              <span class="col-title">Контакты</span>
+              <a href="tel:+74950000000" class="footer-link"
+                >+7 (495) 000-00-00</a
+              >
+              <a href="mailto:hr@silamed.ru" class="footer-link"
+                >hr@silamed.ru</a
+              >
+            </div>
+
+            <div class="footer-col">
+              <span class="col-title">Адрес</span>
+              <p class="footer-address">
+                г. Москва, Пресненская наб., 12<br />
+                Башня "Федерация", офис 3301
+              </p>
+            </div>
+          </div>
+
+          <div class="footer-bottom-links">
+            <a href="#">Политика конфиденциальности</a>
+            <span class="dot-sep">•</span>
+            <a href="#">Обработка персональных данных</a>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <script src="main.js"></script>
+    <div class="site-bg-pattern"></div>
+  </body>
+</html>
