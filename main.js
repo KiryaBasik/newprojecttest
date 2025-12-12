@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btn && (btn.disabled = true);
 
     try {
-      const r = await fetch(`${API_BASE}/feedback`, {
+      const r = await fetch("/api/feedback", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message, page: location.href }),
